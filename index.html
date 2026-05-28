@@ -4,26 +4,108 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Выбери свой продукт</h1>
-        <ul>
-            <li>
-                <img src="img/mousse.jpg" alt="Товар Увлажняющий мусс">
-                <span>для нормальной кожи</span>
-                <h2>Увлажняющий мусс</h2>
-                <p>Глубоко увлажняет кожу лица, оставляя её мягкой и гладкой.</p>
+        <div class="products backround-image">
+            <h1 class="title">Выбери свой продукт</h1>
 
-                <span>Состав: </span>
-                <ul>
-                    <li>активные натуральные комплексы</li>
-                    <li>витамины С, А, РР, В И Е</li>
-                    <li>солнцезащитные компоненты</li>
-                </ul>
+            <ul class="product-list">
+                <li class="product-card">
+                    <img class="product-card__img" src="img/mousse.png" alt="Товар Увлажняющий мусс">
+                    <span class="product-card__tag">для normalной кожи</span>
+                    <h2 class="product-card__title">Увлажняющий мусс</h2>
+                    <p class="product-card__description">Глубоко увлажняет кожу лица, оставляя её мягкой и гладкой.</p>
 
-                <b>Цена:</b>
-                <span>2 750 ₽</span>
-            </li>
-        </ul>
+                    <b class="product-card__compound">Состав:</b>
+                    <ul class="product-card__ingredients">
+                        <li class="product-card__ingredient">активные натуральные комплексы</li>
+                        <li class="product-card__ingredient">витамины С, А, РР, В И Е</li>
+                        <li class="product-card__ingredient">солнцезащитные компоненты</li>
+                    </ul>
+
+                    <div class="product-card__price">
+                        <b class="price__label">Цена</b>
+                        <span class="price__value">2 750 ₽</span>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <img class="product-card__img" src="img/moisturizing_mask.png" alt="Товар Увлажняющая маска">
+                    <span class="product-card__tag">для normalной кожи</span>
+                    <h2 class="product-card__title">Увлажняющая маска</h2>
+                    <p class="product-card__description">Способствует удерживанию влаги в верхних слоях кожи.</p>
+
+                    <b class="product-card__compound">Состав:</b>
+                    <ul class="product-card__ingredients">
+                        <li class="product-card__ingredient">воски</li>
+                        <li class="product-card__ingredient">минералы</li>
+                        <li class="product-card__ingredient">масла</li>
+                    </ul>
+
+                    <div class="product-card__price">
+                        <b class="price__label">Цена</b>
+                        <span class="price__value">3 500 ₽</span>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <img class="product-card__img" src="img/cleansing_gel.png" alt="Гель для умывания">
+                    <span class="product-card__tag">для normalной кожи</span>
+                    <h2 class="product-card__title">Гель для умывания</h2>
+                    <p class="product-card__description">Интенсивно очищает, не повреждает защитный барьер кожи.</p>
+
+                    <b class="product-card__compound">Состав:</b>
+                    <ul class="product-card__ingredients">
+                        <li class="product-card__ingredient">минералы</li>
+                        <li class="product-card__ingredient">витамины С, А, РР, В И Е</li>
+                        <li class="product-card__ingredient">солнцезащитные компоненты</li>
+                    </ul>
+
+                    <div class="product-card__price">
+                        <b class="price__label">Цена</b>
+                        <span class="price__value">1 650 ₽</span>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <img class="product-card__img" src="img/gift_set1.png" alt="Подарочный набор №1">
+                    <span class="product-card__tag">для normalной кожи</span>
+                    <h2 class="product-card__title">Подарочный набор №1</h2>
+                    <p class="product-card__description">Набор, состоящий из увлажняющего крема и маски.</p>
+
+                    <b class="product-card__compound">Состав:</b>
+                    <ul class="product-card__ingredients">
+                        <li class="product-card__ingredient">воски</li>
+                        <li class="product-card__ingredient">минералы</li>
+                        <li class="product-card__ingredient">масла</li>
+                    </ul>
+
+                    <div class="product-card__price">
+                        <b class="price__label">Цена</b>
+                        <span class="price__value">4 750 ₽</span>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <img class="product-card__img" src="img/gift_set5.png" alt="Подарочный набор №5">
+                    <span class="product-card__tag">для normalной кожи</span>
+                    <h2 class="product-card__title">Подарочный набор №5</h2>
+                    <p class="product-card__description">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
+
+                    <b class="product-card__compound">Состав:</b>
+                    <ul class="product-card__ingredients">
+                        <li class="product-card__ingredient">воски</li>
+                        <li class="product-card__ingredient">минералы</li>
+                        <li class="product-card__ingredient">масла</li>
+                    </ul>
+
+                    <div class="product-card__price">
+                        <b class="price__label">Цена</b>
+                        <span class="price__value">7 520 ₽</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>
