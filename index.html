@@ -3,14 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Каталог товаров</title>
         <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="products backround-image">
-            <h1 class="title">Выбери свой продукт</h1>
+        <main class="catalog">
+            <h1 class="catalog__title">Выбери свой продукт</h1>
 
-            <ul class="product-list">
+            <ul class="catalog__list">
                 <li class="product-card">
                     <img class="product-card__img" src="img/mousse.png" alt="Товар Увлажняющий мусс">
                     <span class="product-card__tag">для нормальной кожи</span>
@@ -25,8 +28,8 @@
                     </ul>
 
                     <div class="product-card__price">
-                        <b class="price__label">Цена</b>
-                        <span class="price__value">2 750 ₽</span>
+                        <b class="product-card__price-label">Цена</b>
+                        <span class="product-card__price-value">2 750 ₽</span>
                     </div>
                 </li>
 
@@ -44,9 +47,9 @@
                     </ul>
 
                     <div class="product-card__price">
-                        <b class="price__label">Цена</b>
-                        <span class="price__value">3 500 ₽</span>
-                    </div>
+                    <b class="product-card__price-label">Цена</b>
+                    <span class="product-card__price-value">3 500 ₽</span>
+                </div>
                 </li>
 
                 <li class="product-card">
@@ -63,8 +66,8 @@
                     </ul>
 
                     <div class="product-card__price">
-                        <b class="price__label">Цена</b>
-                        <span class="price__value">1 650 ₽</span>
+                        <b class="product-card__price-label">Цена</b>
+                        <span class="product-card__price-value">1 650 ₽</span>
                     </div>
                 </li>
 
@@ -82,8 +85,8 @@
                     </ul>
 
                     <div class="product-card__price">
-                        <b class="price__label">Цена</b>
-                        <span class="price__value">4 750 ₽</span>
+                        <b class="product-card__price-label">Цена</b>
+                        <span class="product-card__price-value">4 750 ₽</span>
                     </div>
                 </li>
 
@@ -101,11 +104,11 @@
                     </ul>
 
                     <div class="product-card__price">
-                        <b class="price__label">Цена</b>
-                        <span class="price__value">7 520 ₽</span>
+                        <b class="product-card__price-label">Цена</b>
+                        <span class="product-card__price-value">7 520 ₽</span>
                     </div>
                 </li>
             </ul>
-        </div>
+        </main>
     </body>
 </html>
