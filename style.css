@@ -9,14 +9,14 @@
     font-weight: 400;
 }
 
-.backround-image {
+.catalog {
     background-image: url('img/background.png'); 
     background-repeat: no-repeat;
     background-position: top center;
     min-height: 100vh; 
 }
 
-.title {
+.catalog__title {
     font-size: 70px;
     line-height: 78px;
     text-align: center;
@@ -24,7 +24,7 @@
     margin-bottom: 60px;
 }
 
-.product-list {
+.catalog__list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -35,44 +35,50 @@
     padding-bottom: 60px;
 }
 
-.product-card {
+
+.catalog__list .product-card {
     background-color: #f4f5f9;
     border-radius: 8px;
     padding: 30px 25px;
-    width: 320px;
+    width: 340px;
     display: flex;
     flex-direction: column;
 }
 
 .product-card__img {
-    height: 180px;
     object-fit: contain;
-    margin-bottom: 20px;
+    height: 180px;
+    margin-bottom: 30px;
     align-self: center;
+    width: 290px;
+    height: 245px;
 }
 
 .product-card__tag {
-    font-size: 11px;
+    font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
     color: #a2a1bd;
     margin-bottom: 8px;
+    line-height: 24px;
 }
 
 .product-card__title {
     font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-    margin-bottom: 12px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    line-height: 27px;
 }
 
 .product-card__description {
-    margin-bottom: 15px;
+    font-size: 13px;
+    line-height: 18px;
+    padding-bottom: 25px;
 }
 
 .product-card__compound {
-    font-weight: 600;
-    margin-bottom: 6px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 .product-card__ingredients {
@@ -92,11 +98,12 @@
     align-items: center;
 }
 
-.price__label {
-    font-weight: 700;
+.product-card__price-label {
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.price__value {
+.product-card__price-value {
     font-size: 16px;
     font-weight: 600;
 }
