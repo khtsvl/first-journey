@@ -1,19 +1,50 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Каталог товаров</title>
         <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="products backround-image">
-            <h1 class="title">Выбери свой продукт</h1>
-
-            <ul class="product-list">
+        <main class="catalog">
+            <h1 class="catalog__title">Выбери свой продукт</h1>
+            <button id="change-color-first-card">Сменить цвет первой карточки</button>
+            <button id="change-color-all-card">Сменить цвет всех карточек</button>
+            <button id="open-google">Открыть страницу Google.com</button>
+            <button id="log-Message">Вывести сообщение в консоль лог</button>
+            <button id="toggle-сolor-btn">Поменять цвет</button>
+            
+            <ul class="catalog__list">
                 <li class="product-card">
                     <img class="product-card__img" src="img/mousse.png" alt="Товар Увлажняющий мусс">
-                    <span class="product-card__tag">для normalной кожи</span>
+                    <span class="product-card__tag">для нормальной кожи</span>
                     <h2 class="product-card__title">Увлажняющий мусс</h2>
                     <p class="product-card__description">Глубоко увлажняет кожу лица, оставляя её мягкой и гладкой.</p>
 
@@ -25,14 +56,14 @@
                     </ul>
 
                     <div class="product-card__price">
-                        <b class="price__label">Цена</b>
-                        <span class="price__value">2 750 ₽</span>
+                        <b class="product-card__price-label">Цена</b>
+                        <span class="product-card__price-value">2 750 &#8381;</span>
                     </div>
                 </li>
 
                 <li class="product-card">
                     <img class="product-card__img" src="img/moisturizing_mask.png" alt="Товар Увлажняющая маска">
-                    <span class="product-card__tag">для normalной кожи</span>
+                    <span class="product-card__tag">для нормальной кожи</span>
                     <h2 class="product-card__title">Увлажняющая маска</h2>
                     <p class="product-card__description">Способствует удерживанию влаги в верхних слоях кожи.</p>
 
@@ -44,14 +75,14 @@
                     </ul>
 
                     <div class="product-card__price">
-                        <b class="price__label">Цена</b>
-                        <span class="price__value">3 500 ₽</span>
-                    </div>
+                    <b class="product-card__price-label">Цена</b>
+                    <span class="product-card__price-value">3 500 &#8381;</span>
+                </div>
                 </li>
 
                 <li class="product-card">
                     <img class="product-card__img" src="img/cleansing_gel.png" alt="Гель для умывания">
-                    <span class="product-card__tag">для normalной кожи</span>
+                    <span class="product-card__tag">для нормальной кожи</span>
                     <h2 class="product-card__title">Гель для умывания</h2>
                     <p class="product-card__description">Интенсивно очищает, не повреждает защитный барьер кожи.</p>
 
@@ -63,14 +94,14 @@
                     </ul>
 
                     <div class="product-card__price">
-                        <b class="price__label">Цена</b>
-                        <span class="price__value">1 650 ₽</span>
+                        <b class="product-card__price-label">Цена</b>
+                        <span class="product-card__price-value">1 650 &#8381;</span>
                     </div>
                 </li>
 
                 <li class="product-card">
                     <img class="product-card__img" src="img/gift_set1.png" alt="Подарочный набор №1">
-                    <span class="product-card__tag">для normalной кожи</span>
+                    <span class="product-card__tag">для нормальной кожи</span>
                     <h2 class="product-card__title">Подарочный набор №1</h2>
                     <p class="product-card__description">Набор, состоящий из увлажняющего крема и маски.</p>
 
@@ -82,8 +113,8 @@
                     </ul>
 
                     <div class="product-card__price">
-                        <b class="price__label">Цена</b>
-                        <span class="price__value">4 750 ₽</span>
+                        <b class="product-card__price-label">Цена</b>
+                        <span class="product-card__price-value">4 750 &#8381;</span>
                     </div>
                 </li>
 
@@ -101,11 +132,13 @@
                     </ul>
 
                     <div class="product-card__price">
-                        <b class="price__label">Цена</b>
-                        <span class="price__value">7 520 ₽</span>
+                        <b class="product-card__price-label">Цена</b>
+                        <span class="product-card__price-value">7 520 &#8381;</span>
                     </div>
                 </li>
             </ul>
-        </div>
+        </main>
+
+        <script src="main.js"></script>
     </body>
 </html>
