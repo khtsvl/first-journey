@@ -1,17 +1,17 @@
-function weatherToday(city = "Москве", temperature = 23) {
+function getWeather(city = "Москве", temperature = 23) {
     console.log(`Сейчас в ${city} температура - ${temperature} градусов по Цельсию`);
 }
 
-weatherToday();
+getWeather();
 
-const lightSpeed = 299792458;
+const LIGHT_SPEED = 299792458;
 
 function checkSpeed(speed) {
-    if (speed > lightSpeed) {
+    if (speed > LIGHT_SPEED) {
         console.log("Сверхсветовая скорость");
-    } else if (speed < lightSpeed) {
+    } else if (speed < LIGHT_SPEED) {
         console.log("Субсветовая скорость");
-    } else if (speed === lightSpeed) {
+    } else if (speed === LIGHT_SPEED) {
         console.log("Скорость света");
     }
 }
