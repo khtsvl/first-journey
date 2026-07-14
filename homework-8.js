@@ -135,16 +135,12 @@ console.log(mergeArrays)
 //  Написать функцию, которая принимает массив сущностей с задания №9.
 //  Добавляем новое свойство для объекта "isRare"...
 
-function addIsRare(book) {
-    if (book.year < 2000) {
-        book.isRare = true;
-    } else {
-        book.isRare = false;
-    }
+function setRareStatus(book) {
+    book.isRare = book.year < 2000 ? true : false;
 
     return book;
 }
 
-const rareBooks = mergeArrays.map(addIsRare);
+const rareBooks = mergeArrays.map(setRareStatus);
 
 console.log(rareBooks)
