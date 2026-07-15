@@ -1,8 +1,8 @@
-function getWeather(city = "Москве", temperature = 23) {
+function showWeather(city = "Москве", temperature = 23) {
     console.log(`Сейчас в ${city} температура - ${temperature} градусов по Цельсию`);
 }
 
-getWeather();
+showWeather();
 
 const LIGHT_SPEED = 299792458;
 
