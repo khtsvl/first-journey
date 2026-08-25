@@ -8,9 +8,13 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
         <main class="catalog">
+
+            <button id="registerBtn" type="button">Регистрация</button>
+
             <h1 class="catalog__title">Выбери свой продукт</h1>
             <button id="change-color-first-card">Сменить цвет первой карточки</button>
             <button id="change-color-all-card">Сменить цвет всех карточек</button>
@@ -116,14 +120,86 @@
             </ul>
         </main>
 
+        <!-- Уровень 1: Семантический футер -->
+<footer class="container__footer">
+    <!-- Блок бренда -->
+    <section class="footer-brand">
+        <h2 class="NameCards">Product Cards</h2>
+        <p class="CardInfo">У нас самые лучшие продукты для кожи!</p>
+        <div class="footer-socials">
+            <a href="#" aria-label="Telegram"><img src="img/telegram-icon.png" class="telegaImg" alt="Telegram"></a>
+            <a href="#" aria-label="VK"><img src="img/vk-icon.png" class="vkImg" alt="VK"></a>
+        </div>
+    </section>
+
+    <!-- Блок формы подписки -->
+    <section class="footer-form">
+        <form id="subscribeForm" novalidate>
+            <label class="subscribe" for="email">Подпишись на наши акции:</label>
+            <div class="footer-input-group">
+                <input type="email" id="email" name="email" placeholder="Введи Email..." required>
+                <button class="SubscribeBut" type="submit">Подписаться</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Блок навигации -->
+    <nav class="footer-nav">
+        <h3 class="fastHrefs">Быстрые ссылки</h3>
+        <ul class="footer-menu">
+            <li><a class="href1" href="#">Главная</a></li>
+            <li><a class="href2" href="#">Магазин</a></li>
+            <li><a class="href3" href="#">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Разделитель и копирайт -->
+    <div class="footer-bottom">
+        <hr class="footer-divider">
+        <small class="copyright-text">www.product-cards.com &copy; all right reserve</small>
+    </div>
+</footer>
+
+        <!-- Уровень 2: Модальное окно и Оверлей -->
+<!-- Фон-затемнение -->
+<div id="overlay" class="overlay"></div>
+
+<!-- Модальное окно -->
+<div id="modal" class="modal">
+    <button id="closeModal" class="modal__close" type="button" aria-label="Закрыть">&times;</button>
+    
+    <h2>Регистрация</h2>
+
+    <form id="registerForm" novalidate>
+        <label for="firstName">Имя:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Введите имя" required>
+
+        <label for="lastName">Фамилия:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Введите фамилию" required>
+
+        <label for="birthDate">Дата рождения:</label>
+        <input type="date" id="birthDate" name="birthDate" required>
+
+        <label for="login">Логин:</label>
+        <input type="text" id="login" name="login" placeholder="Придумайте логин" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+        <label for="confirmPassword">Повторите пароль:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Повторите пароль" required>
+
+        <button type="submit" class="submit-btn">Зарегистрироваться</button>
+    </form>
+</div>
+
         <script src="main.js"></script>
         <script src="homework-7.js"></script>
         <script src="homework-8.js"></script>
         <script type="module" src="homework-9.js"></script>
         <script type="module" src="homework-10.js"></script>
+        <script type="module" src="homework-11.js"></script>
 
-
-<!-- 3 -->
 
         <template id="product-template">
             <li class="product-card">
