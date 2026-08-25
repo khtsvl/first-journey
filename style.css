@@ -128,3 +128,287 @@ button:hover {
     color: #fff;
     background-color: #ac4cd2;
 }
+
+
+footer.container__footer {
+    background-color: #3f3f3f !important;
+    padding: 90px 80px 40px !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    box-sizing: border-box !important;
+}
+
+footer.container__footer * {
+    color: #ffffff !important;
+}
+
+/* Левая колонка */
+.footer-brand {
+    flex: 1 !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.NameCards {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    line-height: 154% !important;
+    color: #FFFFFF !important;
+    margin-bottom: 12px !important;
+}
+
+.CardInfo {
+    font-size: 15px !important;
+    color: #d1d1d1 !important;
+    margin-bottom: 20px !important;
+}
+
+.footer-socials {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 16px !important;
+}
+
+.footer-socials a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+}
+
+.telegaImg {
+    width: 20px !important;
+    height: 20px !important;
+    object-fit: contain !important;
+}
+
+.vkImg {
+    width: 24px !important;
+    height: 14px !important;
+    object-fit: contain !important;
+}
+
+/* Центральная колонка */
+.footer-form {
+    flex: 1 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.subscribe {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    margin-bottom: 20px !important;
+    text-align: center;
+    display: block !important;
+}
+
+.footer-input-group {
+    display: flex !important;
+    align-items: center !important;
+    background-color: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 2px !important;
+    height: 52px !important;
+    width: 100% !important;
+    border: none !important;
+}
+
+#email {
+    flex: 1 !important;
+    height: 100% !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0 16px !important;
+    font-size: 14px !important;
+    color: #333333 !important;
+    background: transparent !important;
+}
+
+button.SubscribeBut {
+    height: 100% !important;
+    background: transparent !important;
+    border: none !important;
+    border-left: 1px solid #cccccc !important;
+    color: #1a1a1a !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    padding: 0 20px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+button.SubscribeBut:hover {
+    transform: none !important;
+    color: #515076 !important;
+}
+
+/* Правая колонка */
+.footer-nav {
+    flex: 1 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.fastHrefs {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    margin-bottom: 15px !important;
+}
+
+.footer-menu {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: right;
+}
+
+.footer-menu li a {
+    text-decoration: none !important;
+    font-size: 15px !important;
+    color: #d1d1d1 !important;
+    transition: color 0.2s;
+}
+
+.footer-menu li a:hover {
+    color: #ffffff !important;
+}
+
+/* Нижняя часть (линия и копирайт на всю ширину) */
+.footer-bottom {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 70px !important;
+}
+
+.footer-divider {
+    width: 60px !important;
+    border: none !important;
+    border-top: 1px solid #777777 !important;
+    margin: 0 0 18px 0 !important;
+}
+
+.copyright-text {
+    font-size: 14px !important;
+    color: #b0b0b0 !important;
+    text-align: center;
+    display: block;
+}
+
+/* ===================================
+   Модальное окно и Overlay
+   =================================== */
+
+/* 1. Затемнение фона */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный темно-серый оверлей */
+    z-index: 998;
+}
+
+/* 2. Модалка ровно по центру страницы */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 90%;
+    max-width: 440px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+/* Открытие окон */
+.overlay.modal-showed,
+.modal.modal-showed {
+    display: block !important;
+}
+
+/* Заголовок и кнопка закрытия */
+.modal h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333333 !important;
+    font-size: 22px !important;
+}
+
+.modal__close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background: transparent !important;
+    border: none !important;
+    font-size: 24px !important;
+    line-height: 1;
+    color: #888888 !important;
+    cursor: pointer;
+    box-shadow: none !important;
+}
+
+/* Поля формы */
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#registerForm label {
+    font-size: 13px !important;
+    color: #333333 !important;
+    font-weight: 500;
+}
+
+#registerForm input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px !important;
+    color: #333333 !important;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    height: 45px;
+    background-color: #515076;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
