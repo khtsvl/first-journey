@@ -35,7 +35,6 @@
     padding-bottom: 60px;
 }
 
-
 .catalog__list .product-card {
     background-color: #f4f5f9;
     border-radius: 8px;
@@ -47,7 +46,6 @@
 
 .product-card__img {
     object-fit: contain;
-    height: 180px;
     margin-bottom: 30px;
     align-self: center;
     width: 290px;
@@ -130,72 +128,72 @@ button:hover {
 }
 
 
+
+
 footer.container__footer {
-    background-color: #3f3f3f !important;
-    padding: 90px 80px 40px !important;
-    width: 100% !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: space-between !important;
-    align-items: flex-start !important;
-    box-sizing: border-box !important;
+    background-color: #3f3f3f;
+    padding: 90px 80px 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
 }
 
 footer.container__footer * {
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
-/* Левая колонка */
 .footer-brand {
-    flex: 1 !important;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .NameCards {
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 28px !important;
-    font-weight: 800 !important;
-    line-height: 154% !important;
-    color: #FFFFFF !important;
-    margin-bottom: 12px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 154%;
+    color: #FFFFFF;
+    margin-bottom: 12px;
 }
 
 .CardInfo {
-    font-size: 15px !important;
-    color: #d1d1d1 !important;
-    margin-bottom: 20px !important;
+    font-size: 15px;
+    color: #d1d1d1;
+    margin-bottom: 20px;
 }
 
 .footer-socials {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 16px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
 }
 
 .footer-socials a {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .telegaImg {
-    width: 20px !important;
-    height: 20px !important;
-    object-fit: contain !important;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 .vkImg {
-    width: 24px !important;
-    height: 14px !important;
-    object-fit: contain !important;
+    width: 24px;
+    height: 14px;
+    object-fit: contain;
 }
 
-/* Центральная колонка */
 .footer-form {
-    flex: 1 !important;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,73 +209,72 @@ footer.container__footer * {
 }
 
 .subscribe {
-    font-size: 18px !important;
-    font-weight: 400 !important;
-    margin-bottom: 20px !important;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
     text-align: center;
-    display: block !important;
+    display: block;
 }
 
 .footer-input-group {
-    display: flex !important;
-    align-items: center !important;
-    background-color: #ffffff !important;
-    border-radius: 12px !important;
-    padding: 2px !important;
-    height: 52px !important;
-    width: 100% !important;
-    border: none !important;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2px;
+    height: 52px;
+    width: 100%;
+    border: none;
 }
 
 #email {
-    flex: 1 !important;
-    height: 100% !important;
-    border: none !important;
-    outline: none !important;
-    padding: 0 16px !important;
-    font-size: 14px !important;
-    color: #333333 !important;
-    background: transparent !important;
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #333333;
+    background: transparent;
 }
 
 button.SubscribeBut {
-    height: 100% !important;
-    background: transparent !important;
-    border: none !important;
-    border-left: 1px solid #cccccc !important;
-    color: #1a1a1a !important;
-    font-size: 15px !important;
-    font-weight: 600 !important;
-    padding: 0 20px !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border-left: 1px solid #cccccc;
+    color: #1a1a1a;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 20px;
+    border-radius: 0;
+    box-shadow: none;
     cursor: pointer;
     white-space: nowrap;
 }
 
 button.SubscribeBut:hover {
-    transform: none !important;
-    color: #515076 !important;
+    transform: none;
+    color: #515076;
 }
 
-/* Правая колонка */
 .footer-nav {
-    flex: 1 !important;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
 .fastHrefs {
-    font-size: 18px !important;
-    font-weight: 500 !important;
-    margin-bottom: 15px !important;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
 .footer-menu {
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -285,44 +282,39 @@ button.SubscribeBut:hover {
 }
 
 .footer-menu li a {
-    text-decoration: none !important;
-    font-size: 15px !important;
-    color: #d1d1d1 !important;
+    text-decoration: none;
+    font-size: 15px;
+    color: #d1d1d1;
     transition: color 0.2s;
 }
 
 .footer-menu li a:hover {
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
-/* Нижняя часть (линия и копирайт на всю ширину) */
 .footer-bottom {
-    width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    margin-top: 70px !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
 }
 
 .footer-divider {
-    width: 60px !important;
-    border: none !important;
-    border-top: 1px solid #777777 !important;
-    margin: 0 0 18px 0 !important;
+    width: 60px;
+    border: none;
+    border-top: 1px solid #777777;
+    margin: 0 0 18px 0;
 }
 
 .copyright-text {
-    font-size: 14px !important;
-    color: #b0b0b0 !important;
+    font-size: 14px;
+    color: #b0b0b0;
     text-align: center;
     display: block;
 }
 
-/* ===================================
-   Модальное окно и Overlay
-   =================================== */
 
-/* 1. Затемнение фона */
 .overlay {
     display: none;
     position: fixed;
@@ -330,11 +322,10 @@ button.SubscribeBut:hover {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный темно-серый оверлей */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 998;
 }
 
-/* 2. Модалка ровно по центру страницы */
 .modal {
     display: none;
     position: fixed;
@@ -351,35 +342,32 @@ button.SubscribeBut:hover {
     box-sizing: border-box;
 }
 
-/* Открытие окон */
 .overlay.modal-showed,
 .modal.modal-showed {
-    display: block !important;
+    display: block;
 }
 
-/* Заголовок и кнопка закрытия */
 .modal h2 {
     margin-top: 0;
     margin-bottom: 20px;
     text-align: center;
-    color: #333333 !important;
-    font-size: 22px !important;
+    color: #333333;
+    font-size: 22px;
 }
 
 .modal__close {
     position: absolute;
     top: 12px;
     right: 15px;
-    background: transparent !important;
-    border: none !important;
-    font-size: 24px !important;
+    background: transparent;
+    border: none;
+    font-size: 24px;
     line-height: 1;
-    color: #888888 !important;
+    color: #888888;
     cursor: pointer;
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
-/* Поля формы */
 #registerForm {
     display: flex;
     flex-direction: column;
@@ -387,8 +375,8 @@ button.SubscribeBut:hover {
 }
 
 #registerForm label {
-    font-size: 13px !important;
-    color: #333333 !important;
+    font-size: 13px;
+    color: #333333;
     font-weight: 500;
 }
 
@@ -397,8 +385,8 @@ button.SubscribeBut:hover {
     padding: 10px 12px;
     border: 1px solid #cccccc;
     border-radius: 6px;
-    font-size: 14px !important;
-    color: #333333 !important;
+    font-size: 14px;
+    color: #333333;
     box-sizing: border-box;
 }
 
