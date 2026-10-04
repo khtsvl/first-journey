@@ -1,4 +1,11 @@
-// Покраска всех карточек
+import './products.js';
+import './homework-7.js';
+import './homework-8.js';
+import './homework-9.js';
+import './homework-10.js';
+import './homework-11.js';
+import './homework-12.js';
+
 
 const productCards = document.querySelectorAll('.product-card');
 const changeColorAllCardButton = document.querySelector('#change-color-all-card');
@@ -10,7 +17,6 @@ changeColorAllCardButton.addEventListener('click', () => {
     productCards.forEach ((card)=> card.style.backgroundColor = purpleColorHash);
 })
 
-// Покраска первой карточки
 
 const firstProductCard = document.querySelector('.product-card');
 const changeColorFirstCardButton = document.querySelector('#change-color-first-card');
@@ -19,7 +25,6 @@ changeColorFirstCardButton.addEventListener('click', () => {
     firstProductCard.style.backgroundColor = pinkColorHash;
 });
 
-// Открыть google
 
 const openGoogleButton = document.querySelector('#open-google');
 
@@ -36,7 +41,6 @@ function openGoogle() {
   }
 }
 
-// Вывод консоль лог
 
 const logMessageButton = document.querySelector('#log-Message');
 
@@ -49,7 +53,6 @@ function logMessage(message) {
 };
 
 
-// Вывод текста заголовка при наведении
 
 
 const catalogTitle = document.querySelector('.catalog__title');
@@ -57,9 +60,6 @@ const catalogTitle = document.querySelector('.catalog__title');
 catalogTitle.addEventListener('mouseover', function () {
   console.log(catalogTitle.textContent);
 });
-
-
-// Кнопка меняющая цвет
 
 const toggleColorBtn = document.querySelector("#toggle-сolor-btn");
 
